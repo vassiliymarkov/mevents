@@ -545,6 +545,9 @@ h1 {
 		font-size: 20px;
 		color: #000;
 	}
+	.rectangle.show {
+		z-index: 2;
+	}
 	.gallery {
 		display: flex;
 		flex-direction: column;
