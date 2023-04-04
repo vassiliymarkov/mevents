@@ -57,7 +57,7 @@ body {
 
 .menuWraper {
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	left: 0;
 	z-index: 3;
@@ -145,14 +145,12 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	/*border: 2px solid red;*/
 	margin: auto auto;
 }
 
 #line1 {
 	font-size: 120px;
 	font-weight: bold;
-	/*margin-top: 50px;*/
 	margin-top: calc(30px + (110 - 30) * ((100vw - 320px) / (1800 - 320)));
 }
 
@@ -166,7 +164,20 @@ body {
 #line3 {
 	font-size: calc(16px + (16 - 10) * ((100vw - 320px) / (1800 - 320)));
 	margin-top: calc(30px + (30 - 10) * ((100vw - 320px) / (1800 - 320)));
-}*/
+}
+
+.login {
+	background-color: rgba(255, 255, 255, 0);
+	border-right-color: transparent;
+	z-index: 555;
+	text-align: center;
+	font-weight: 900;
+	margin-top: 150px;
+}
+
+.login a {
+	color: #fff;
+}
 
 @keyframes img-in {
     0% { filter: scale(100%); opacity: 0;}
