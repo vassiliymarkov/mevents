@@ -161,8 +161,8 @@ body {
 }
 
 #line3 {
-	font-size: calc(16px + (16 - 10) * ((100vw - 320px) / (1800 - 320)));
-	margin-top: calc(30px + (30 - 10) * ((100vw - 320px) / (1800 - 320)));
+	font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1800 - 320)));
+	margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1800 - 320)));
 }
 
 .login {
@@ -172,12 +172,12 @@ body {
 	z-index: 555;
 	text-align: center;
 	font-weight: 900;
-	margin-top: 150px;
+	margin-top: calc(90px + (170 - 90) * ((100vw - 320px) / (1800 - 320)));
 }
 
 .login a {
 	color: #fff;
-	font-size: 24px;
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1800 - 320)));
 }
 
 .login a:hover {
