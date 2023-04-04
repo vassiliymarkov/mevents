@@ -49,6 +49,10 @@ body {
 	font-family: 'Maven Pro', sans-serif;;
 }
 
+.wraper {
+	max-width: 1800px;
+}
+
 /* MENU */
 
 .menuWraper {
