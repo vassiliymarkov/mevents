@@ -121,17 +121,13 @@ body {
 	top: 56%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: calc(200px + (300 - 200) * ((100vw - 320px) / (1800 - 320)));
-	height: calc(300px + (400 - 200) * ((100vw - 320px) / (1800 - 320)));
-	height: 400px;
+	width: calc(200px + (300 - 100) * ((100vw - 320px) / (1800 - 320)));
+	height: calc(300px + (800 - 600) * ((100vw - 320px) / (1800 - 320)));
 	background-color: rgba(255, 255, 255, 0.5);
 	border: 5px solid white;
 	text-align: center;
 	font-family: 'Jaapolli-regular', serif;
-	/*font-size: 30px;*/
-	/*font-weight: bold;*/
-	/*line-height: 1.5;*/
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 	opacity: 0;
 	transition: opacity 1.5s ease-out;
 }
@@ -143,23 +139,20 @@ body {
 #line1 {
 	font-size: 120px;
 	font-weight: bold;
+	/*margin-top: 50px;*/
+	margin-top: calc(20px + (90 - 20) * ((100vw - 320px) / (1800 - 320)));
 }
 
 #line2 {
-	font-size: 40px;
+	font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1800 - 320)));
 	font-weight: bold;
 	letter-spacing: 5px;
-	line-height: 80px;
-}
-
-@media (max-width: 320px) {
-	#line2 {
-		font-size: 40px;
-	}
+	margin-top: calc(30px + (30 - 20) * ((100vw - 320px) / (1800 - 320)));
 }
 
 #line3 {
-	font-size: 16px;
+	font-size: calc(16px + (16 - 10) * ((100vw - 320px) / (1800 - 320)));
+	margin-top: calc(20px + (20 - 00) * ((100vw - 320px) / (1800 - 320)));
 }
 
 @keyframes img-in {
