@@ -140,24 +140,33 @@ body {
 	z-index: 3;
 }
 
+.container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*border: 2px solid red;*/
+	margin: auto auto;
+}
+
 #line1 {
 	font-size: 120px;
 	font-weight: bold;
 	/*margin-top: 50px;*/
-	margin-top: calc(20px + (90 - 20) * ((100vw - 320px) / (1800 - 320)));
+	margin-top: calc(30px + (110 - 30) * ((100vw - 320px) / (1800 - 320)));
 }
 
 #line2 {
-	font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1800 - 320)));
+	font-size: calc(16px + (40 - 16) * ((100vw - 320px) / (1800 - 320)));
 	font-weight: bold;
 	letter-spacing: 5px;
-	margin-top: calc(30px + (30 - 20) * ((100vw - 320px) / (1800 - 320)));
+	margin-top: calc(15px + (15 - 10) * ((100vw - 320px) / (1800 - 320)));
 }
 
 #line3 {
 	font-size: calc(16px + (16 - 10) * ((100vw - 320px) / (1800 - 320)));
-	margin-top: calc(20px + (20 - 00) * ((100vw - 320px) / (1800 - 320)));
-}
+	margin-top: calc(30px + (30 - 10) * ((100vw - 320px) / (1800 - 320)));
+}*/
 
 @keyframes img-in {
     0% { filter: scale(100%); opacity: 0;}
