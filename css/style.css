@@ -134,15 +134,15 @@ body {
 
 .rectangle {
 	position: absolute;
-	top: calc(350px + (408 - 350) * ((87.33vh - 533px) / (631 - 533)));
+	top: calc(350px + (408 - 350) * ((87.32vh - 533px) / (631 - 533)));
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: calc(160px + (300 - 160) * ((100vw - 320px) / (1800 - 320)));
-	height: calc(250px + (400 - 250) * ((100vw - 320px) / (1800 - 320)));
-	height: 400px;
+	height: calc(280px + (300 - 280) * ((87.321711569vh - 533px) / (631 - 533)));
+	/*height: 400px;*/
 	background-color: rgba(255, 255, 255, 0.5);
 	border: 5px solid white;
-	font-family: 'Jaapolli-regular', serif;
+	font-family: 'Jaapokki-regular', serif;
 	opacity: 0;
 	transition: opacity 1.5s ease-out;
 }
