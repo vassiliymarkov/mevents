@@ -134,12 +134,11 @@ body {
 
 .rectangle {
 	position: absolute;
-	top: calc(350px + (408 - 350) * ((87.32vh - 533px) / (631 - 533)));
+	top: calc(347px + (403 - 347) * ((87.32vh - 533px) / (631 - 533)));
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: calc(160px + (300 - 160) * ((100vw - 320px) / (1800 - 320)));
-	height: calc(280px + (300 - 280) * ((87.321711569vh - 533px) / (631 - 533)));
-	/*height: 400px;*/
+	height: calc(300px + (365 - 300) * ((87.321711569vh - 533px) / (631 - 533)));
 	background-color: rgba(255, 255, 255, 0.5);
 	border: 5px solid white;
 	font-family: 'Jaapokki-regular', serif;
@@ -159,9 +158,10 @@ body {
 .container {
 	position: relative;
 	text-align: center;
-	top: 0;
+top: 0;
 	left: 0;
 	width: 100%;
+	height: fit-content;
 	margin: auto auto;
 }
 
@@ -169,7 +169,8 @@ body {
 	text-align: center;
 	font-size: 120px;
 	font-weight: bold;
-	margin-top: calc(40px + (74 - 40) * ((100vw - 320px) / (1800 - 320)));
+	margin-top: calc(15px + (41 - 15) * ((100vh - 533px) / (631 - 533)));
+	/*margin-top: 20px;*/
 }
 
 #line2 {
