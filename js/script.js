@@ -142,3 +142,11 @@ initImg('#firstScreen img', [
 		this.change(); 
 	}
   }
+
+// RECTANGLE APPEARENCE
+  window.addEventListener('load', function() {
+    const rectangle = document.querySelector('.rectangle');
+    setTimeout(() => {
+      rectangle.classList.add('show');
+    }, 1000);
+  });

@@ -74,7 +74,7 @@ body {
 	display: flex;
     align-items: center;
 	justify-content: space-between;
-	min-height: 70px;
+	height: 80px;
 }
 
 .menuIcon {
@@ -121,18 +121,24 @@ body {
 }
 
 /*rectangleWraper {
+	border: 4px solid red;
+	top: 80px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: absolute;
 	margin-left: 50%;
-	border: 2px solid red;
 	position: absolute;
-	max-width: 100vw;
-	height: 100%;
+	width: 100vw;
+	height: calc(100vh - 80px);
+	z-index: 55555;
 }*/
 
 .rectangle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 	position: absolute;
 	top: calc(347px + (403 - 347) * ((87.32vh - 533px) / (631 - 533)));
 	left: 50%;
@@ -149,20 +155,45 @@ body {
 	opacity: 1;
 	z-index: 3;
 }
-@media (max-width: 320px) {
-	.rectangle {
-/*		top: 307px;*/
-		left: 50%;
-	}
+
+.logoWraper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+	object-fit: cover;
+	/*width: 100%;
+	height: 100%;*/
 }
-.container {
-	position: relative;
+
+#logoRectangle {
 	text-align: center;
-top: 0;
-	left: 0;
 	width: 100%;
-	height: fit-content;
-	margin: auto auto;
+	height: 100%;
+	
+}
+
+.rectangle span {
+	text-align: center;
+	font-weight: 600;
+	font-size: 15px;
+	/*margin-top: -30px;*/
+	
+}
+
+.rectangle a:nth-child(1) {
+	font-size: 24px;
+	color: #000;
+	line-height: 1.7;
+}
+.rectangle a:nth-child(2) {
+	font-size: 24px;
+	color: #000;
+	margin-top: 30px
+}
+
+.rectangle a:hover {
+	color: red;
 }
 
 #line1 {
@@ -188,20 +219,13 @@ top: 0;
 }
 
 .login {
-	width: 323%;
-	display: flex;
-	justify-content: space-between;
-	z-index: 555;
+	width: 100%;
 	text-align: center;
 	font-weight: 900;
-	margin-top: calc(90px + (120 - 90) * ((100vw - 320px) / (1800 - 320)));
-	margin-left: -309px;
 }
 
 .login div {
-	background-color: rgba(255, 255, 255, 0.5);
-	border: 5px solid #fff;
-	width: 300px;
+	width: 100%;
 }
 
 @media (max-width: 320px) {
@@ -216,12 +240,12 @@ top: 0;
 }
 
 .login a {
-	color: #fff;
+	/*color: #fff;*/
 	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1800 - 320)));
 }
 
 .login a:hover {
-	color: #fff;
+	/*color: #fff;*/
 	font-size: 24px;
 	text-decoration: none;
 }
@@ -236,7 +260,7 @@ top: 0;
   100% { filter: scale(100%); opacity: 0; }}
   
 
-#greeting {
+/*#greeting {
     margin: 0 auto;
 	padding: 0 20px 0 20px;
     color: white;
@@ -262,7 +286,7 @@ top: 0;
 	#greeting {
 		font-size: 80px;
 	}
-}
+}*/
 
 #line1 {
     position: relative;
