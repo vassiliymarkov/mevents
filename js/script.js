@@ -144,9 +144,9 @@ initImg('#firstScreen img', [
   }
 
 // RECTANGLE APPEARENCE
-  window.addEventListener('load', function() {
-    const rectangle = document.querySelector('.rectangle');
+window.addEventListener('load', function() {
+    const container = document.querySelector('.container');
     setTimeout(() => {
-      rectangle.classList.add('show');
+		container.classList.add('show');
     }, 1000);
   });
