@@ -120,27 +120,13 @@ body {
     animation: none 2s linear forwards; 
 }
 
-/*rectangleWraper {
-	border: 4px solid red;
-	top: 80px;
+.container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	position: absolute;
-	margin-left: 50%;
-	position: absolute;
-	width: 100vw;
-	height: calc(100vh - 80px);
-	z-index: 55555;
-}*/
-
-.rectangle {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	top: calc(347px + (403 - 347) * ((87.32vh - 533px) / (631 - 533)));
+	top: calc(347px + (370 - 347) * ((87.32vh - 533px) / (631 - 533)));
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: calc(160px + (300 - 160) * ((100vw - 320px) / (1800 - 320)));
@@ -151,9 +137,20 @@ body {
 	opacity: 0;
 	transition: opacity 1.5s ease-out;
 }
-.rectangle.show {
+
+.container.show {
 	opacity: 1;
-	z-index: 3;
+	z-index: 2;
+}
+
+.rectangle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10px 0 10px;
+	height: 100%;
+	color: #fff;
 }
 
 .logoWraper {
@@ -162,92 +159,32 @@ body {
 	justify-content: space-between;
     align-items: center;
 	object-fit: cover;
-	/*width: 100%;
-	height: 100%;*/
+	padding: 0 10px 0 10px;
+	margin-top: 250px;
+	margin-bottom: 70px;
 }
 
-#logoRectangle {
+.logoRectangle {
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	
-}
-
-.rectangle span {
-	text-align: center;
-	font-weight: 600;
-	font-size: 15px;
-	/*margin-top: -30px;*/
-	
-}
-
-.rectangle a:nth-child(1) {
-	font-size: 24px;
-	color: #000;
-	line-height: 1.7;
-}
-.rectangle a:nth-child(2) {
-	font-size: 24px;
-	color: #000;
-	margin-top: 30px
-}
-
-.rectangle a:hover {
-	color: red;
-}
-
-#line1 {
-	text-align: center;
-	font-size: 120px;
-	font-weight: bold;
-	margin-top: calc(15px + (41 - 15) * ((100vh - 533px) / (631 - 533)));
-	/*margin-top: 20px;*/
-}
-
-#line2 {
-	text-align: center;
-	font-size: calc(16px + (40 - 16) * ((100vw - 320px) / (1800 - 320)));
-	font-weight: bold;
-	letter-spacing: 5px;
-	margin-top: calc(15px + (15 - 10) * ((100vw - 320px) / (1800 - 320)));
-}
-
-#line3 {
-	text-align: center;
-	font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1800 - 320)));
-	margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1800 - 320)));
 }
 
 .login {
-	width: 100%;
-	text-align: center;
-	font-weight: 900;
-}
-
-.login div {
-	width: 100%;
-}
-
-@media (max-width: 320px) {
-	.login {
-		width: 200%;
-		margin-left: -103px;
-	}
-
-	.login div {
-		width: 100px;
-	}
+	display: flex;
+	flex-direction: column;
+	margin-top: 155px;
+	width: 103%;
 }
 
 .login a {
-	/*color: #fff;*/
-	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1800 - 320)));
-}
-
-.login a:hover {
-	/*color: #fff;*/
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 5px solid white;
+	margin-bottom: 20px;
+	color: #fff;
 	font-size: 24px;
-	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
 }
 
 @keyframes img-in {
@@ -259,67 +196,6 @@ body {
    30% { filter: scale(100%); }
   100% { filter: scale(100%); opacity: 0; }}
   
-
-/*#greeting {
-    margin: 0 auto;
-	padding: 0 20px 0 20px;
-    color: white;
-	font-family: 'Jaappoki-regular', serif;
-	font-size: calc(24px + 46 * (100vw / 1800));
-    line-height: 1.2;
-    z-index: 1;
-    width: 100%;
-	height: calc(100vh - 80px);
-    position: absolute;
-    left: 0%;
-    top: 40%;
-    text-align: center;
-    opacity: 1;
-    transition: 1s;
-    animation: show 3s 1; 
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-	overflow-x: hidden;
-}
-
-@media (min-width: 1400px) {
-	#greeting {
-		font-size: 80px;
-	}
-}*/
-
-#line1 {
-    position: relative;
-    animation: showLeft 3s;
-    z-index: 1;
-}
- @keyframes showLeft {
-    from {left:-100%;}
-    to {left:0;}
-}
-
-#line3 {
-    position: relative;
-    animation: showLeft 3s;
-    z-index: 1;
-}
-
-@keyframes showLeft {
-    from {left:-100%;}
-    to {left:0;}
-}
-
-#line2 {
-    position: relative;
-    animation: showRight 3s;
-    z-index: 1;
-}
-    
-@keyframes showRight {
-    from {left:100%;}
-    to {left:0;}
-}
-
 /* DIMMING SCREEN */
 #screen {
  	background-color: black;
@@ -642,4 +518,3 @@ h1 {
 		flex-direction: column;
 	}
 }
-
