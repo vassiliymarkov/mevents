@@ -77,6 +77,14 @@ body {
 	height: 80px;
 }
 
+#logo {
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	top: 15px;
+	left: 100px;
+}
+
 .menuIcon {
 	display: none;
 }
@@ -130,7 +138,7 @@ body {
 	background-size: 100%;
 	font-family: 'Jaapokki-regular', serif;
 	z-index: 2;
-	margin-top: calc(536px + (585 - 536) * ((100vh - 533px) / (631 - 533)));
+	margin-top: calc(526px + (590 - 526) * ((100vh - 533px) / (631 - 533)));
 	margin-left: 50%;
 	top: -50%;
 	transform: translate(-50%, -50%);
@@ -146,12 +154,13 @@ body {
 }
   
   .rectangle {
+	border: 5px solid red;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	width: 250px;
-	height: 300px;
+	width: calc(220px + (270 - 220) * ((100vw - 320px) / (1800 - 320)));
+	height: calc(280px + (300 - 280) * ((100vh - 533px) / (631 - 533)));
 	padding: 0 10px 0 10px;
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -193,7 +202,7 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
-	width: 250px;
+	width: calc(220px + (270 - 220) * ((100vw - 320px) / (1800 - 320)));
 	height: 40px;
 	text-decoration: none;
 	text-shadow: 0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
