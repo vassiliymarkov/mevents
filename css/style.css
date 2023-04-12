@@ -69,7 +69,7 @@ body {
 }
 
 .menuContainer {
-	max-width: 100%;
+	width: 100%;
 	margin: 0px auto;
 	display: flex;
     align-items: center;
@@ -78,7 +78,6 @@ body {
 }
 
 #logo {
-	/*position: absolute;*/
 	width: 70px;
 	height: 50px;
 	top: 15px;
@@ -105,10 +104,6 @@ body {
 }
 
 /* FIRST SCREEN */
-
-#screen {
-	
-}
 
 #firstScreen { 
     max-width: 100vw;
@@ -538,4 +533,16 @@ h1 {
 		display: flex;
 		flex-direction: column;
 	}
+	.menuContainer {
+		max-width: 100%;
+		margin: 0px auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+	}
+	#logo {
+		margin-left: 10px;
+	}
 }
+
