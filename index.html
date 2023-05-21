@@ -14,16 +14,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lato&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
   <script src="https://kit.fontawesome.com/f5ead13868.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
     
-
-
 <!-- NAVIGATION PANNEL -->
       
 <div class="menuWraper">
@@ -34,15 +34,88 @@
         <div class="menuIcon">
           <span></span>
         </div>
-          <nav class="menuBody">
-            <ul class="menuList">
-              <li><a data-goto=".page__section_1" href="#" class="menuLink">ACCUEIL</a></li>
-              <li><a data-goto=".page__section_2" href="#" class="menuLink">SERVICES</a></li>
-              <li><a data-goto=".page__section_3" href="#" class="menuLink">BONS PLANS</a></li>
-              <li><a data-goto=".page__section_3" href="#" class="menuLink">ACTUALITES</a></li>
-              <li><a data-goto=".page__section_3" href="#" class="menuLink">CONTACT</a></li>
-            </ul>
-          </nav>
+        <nav class="menuBody">
+          <ul class="menuList">
+            <li>
+              <a href="#" class="menuLink doubleLine">ACCUEIL</a>
+            </li>
+            <li>
+              <a href="#" class="menuLink doubleLine" data-goto=".page__section_1">SERVICES</a>
+              <span class="menuArrow"></span>
+              <ul class="menuSubList">
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Wedding Planner</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Photographer</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Deejay</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Animations</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Décorations</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Papèterie</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Beauté</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Traiteurs</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Salles</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Lieux d'exception</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Videaste</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Danseurs</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Photobox</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Location voitures mariage</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Bien-être</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Cadeaux</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Robes & Costumes</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Prestige</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Alliances Prestige</a>
+                </li>
+                <li>
+                  <a href="#" class="menuSubLink singleLine">Alirances</a>
+                </li> 
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="menuLink doubleLine" data-goto=".page__section_2">BONS PLANS</a>
+            </li>
+            <li>
+              <a href="#" class="menuLink doubleLine" data-goto=".page__section_3">ACTUALITES</a>
+            </li>
+            <li>
+              <a href="#" class="menuLink " data-goto=".page__section_3">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -109,159 +182,228 @@
   </div>
 </div>
   
-<section class="services page__section_2">
+<section class="services page__section_1">
   <h1>SERVICES</h1>
-  <div class="servicesGallery">
-    <div class="servicesItem">
-      <div><img src="img/services/services_01.webp"></div>
-      <h3>Wedding Planner</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+  <div class="servicesTabs">
+    <div class="tabs">
+      <div class="tabItem active">Wedding Planner</div>
+      <div class="tabItem">Photographer</div>
+      <div class="tabItem">Deejay</div>
+      <div class="tabItem">Animations</div>
+      <div class="tabItem">Décorations</div>
+      <div class="tabItem">Papèterie</div>
+      <div class="tabItem">Beauté (Make up/coiffeur)</div>
+      <div class="tabItem">Traiteurs</div>
+      <div class="tabItem">Salles</div>
+      <div class="tabItem">Lieux d'exception</div>
+      <div class="tabItem">Videaste</div>
+      <div class="tabItem">Danseurs</div>
+      <div class="tabItem">Photobox</div>
+      <div class="tabItem">Location voitures mariage</div>
+      <div class="tabItem">Bien-être</div>
+      <div class="tabItem">Cadeaux</div>
+      <div class="tabItem">Robes & Costumes</div>
+      <div class="tabItem">Prestige</div>
+      <div class="tabItem">Alliances Prestige</div>
+      <div class="tabItem">Alirances</div>
     </div>
-    <div class="servicesItem">
-      <h3>Photographer</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div> <img src="img/services/services_02.webp" alt=""> </div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_03.webp"></div>
-      <h3>Deejay</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Animations</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_04.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_05.webp"></div>
-      <h3>Décorations</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Papèterie</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_06.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_01.webp"></div>
-      <h3>Beauté (Make up/coiffeur)</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Traiteurs</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_02.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_03.webp"></div>
-      <h3>Salles</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Lieux d'exception</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_04.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_05.webp"></div>
-      <h3>Videaste</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Danseurs</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_06.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_01.webp"></div>
-      <h3>Photobox</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Location voitures mariage</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_02.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_03.webp"></div>
-      <h3>Bien-être</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Cadeaux</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_04.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_05.webp"></div>
-      <h3>Robes & Costumes</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Prestige</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_06.webp"></div>
-    </div>
-    <div class="servicesItem">
-      <div><img src="img/services/services_01.webp"></div>
-      <h3>Alliances Prestige</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-    </div>
-    <div class="servicesItem">
-      <h3>Alirances</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
-      <div><img src="img/services/services_02.webp"></div>
+    <div class="content">
+      <div class="contentItem active">
+        <div><h3 class="subTitle">Wedding Planner</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_01.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Photographer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_02.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Deejay</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_03.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Animations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_04.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Décorations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_05.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Papèterie</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_01.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Beauté (Make up/coiffeur)</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_02.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Traiteurs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_03.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Salles</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_04.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Lieux d'exceptionr</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_05.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Videaste</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_01.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Danseurs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_02.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Photobox</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_03.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Location voitures mariage</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_04.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Bien-être</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_05.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Cadeaux</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_01.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Robes & Costumes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_02.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Prestige</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_03.jpg" class="image" alt=""></div>
+      </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Alliances Prestige</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_04.jpg" class="image" alt=""></div>
+  ,1--    </div>
+      <div class="contentItem">
+        <div class="subTitle"><h3>Alirances</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit. Vivamus varius sodales purus ut tempus. Integer ac tempor est, sed ultricies dui.</p>
+        </div>
+        <div><img src="img/intro_05.jpg" class="image" alt=""></div>
+      </div>
     </div>
   </div>
 </section>
 
-
-
-<section class="dj page__section_">
-
-<h1>DEEJAY</h1>
-
-<div class="sectionText">
-  <p>Besoin d'un <a href="#">DJ</a> pour faire danser les morts ?</p>
-  <p>choisissez un <a href="#">DJ</a> parmi nos partenaires et votre soirée ne s'endormira jamais !</p>
-</div>
-
-<div class="dj">
-  <div class="full-screen">
-    <div class="full-screen_body">
+<section class="bonsPlans page__section_2">
+  <h1>BONS PLANS</h1>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="bonPlansSlider">
+      <div class="swiper-wrapper">
+      <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-slide-image">
+            <div class="imageWrapper">
+              <img src="img/slider/Group1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-image">
+            <div class="imageWrapper">
+              <img src="img/slider/Group2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need navigation buttons --> 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <video autoplay muted loop preload="auto" class="full-screen_video">
-      <source type="video/webm" src="vids/dancing_people.webm">
-      <source type="video/mp4" src="vids/dancing_people.mp4">
-    </video>
   </div>
-</div>    
-
+</section>
+<section class="actualites">
+  ofmorm
 </section>
 
-<section>
-
-</section>
 
 
 </div>
@@ -273,4 +415,6 @@
           
           
           <script src="js/script.js"></script>
+          <script src="js/script2.js"></script>
+          
     </body>
